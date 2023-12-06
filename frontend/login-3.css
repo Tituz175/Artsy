@@ -32,12 +32,12 @@ body {
   float: right;
 }
 
-.wrapper h1 {
+.wrapper .text h1 {
   font-size: 30px;
   font-weight: 600;
 }
 
-.wrapper h4 {
+.wrapper .text h4 {
   font-size: 18px;
   font-weight: 400;
 }
@@ -109,7 +109,16 @@ body {
   font-size: 16px;
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 20px;
+}
+
+.register-link p a {
+  text-decoration: none;
+  color: #15485A;
+  font-weight: 600;
+}
+
+.register-link p a:hover {
+  text-decoration: underline;
 }
 
 .wrapper .continue {
@@ -132,7 +141,7 @@ body {
   padding: 15px 10px 16px 10px;
 }
 
-.google {
+/* .google {
   width: 26px;
   height: 27px;
-}
+} */
