@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    max-width: 1800px;
+}
+.home {
+    background-image: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 678px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.logo {
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+    float: left;
+    margin-bottom: 221px;
+}
+#Artsy {
+    font-size: 25px;
+    margin-top: 25px;
+    line-height: 30px;
+    font-weight: 600;
+    margin-right: 300px;
+    float: left;
+}
+.nav {
+    width: 458px;
+    margin-top: 28px;
+    height: 30px;
+    font-size: 20px;
+    float: left;
+}
+.nav .about {
+    margin-left: 130px;
+    margin-right: 130px;
+}
+.login {
+    width: 132px;
+    height: 61px;
+    margin-top: 32px;
+    float: right;
+    background-color: #15485A;
+    color: #ffffff;
+    border-radius: 12px;
+    font-size: 18px;
+}
+.cap {
+    clear: both;
+    font-size: 37px;
+    font-weight: 600;
+}
+.desc {
+    width: 350px;
+    line-height: 30px;
+    font-weight: 400;
+    word-wrap: break-word;
+    font-size: 20px;
+    color: #15485A;
+}
+.explore {
+    width: 147px;
+    height: 64px;
+    font-size: 18px;
+    margin-top: 75px;
+    border-radius: 12px;
+    background-color: #15485A;
+    color: #ffffff;
+}
+.features {
+    padding-left: 60px;
+    padding-bottom: 75px;
+    text-align: center;
+}
+#features {
+    margin-top: 75px;
+    font-size: 27px;
+}
+.feat {
+    float: left;
+    width: 256px;
+    height: 404px;
+    margin-left: 185px;
+}
+p {
+    font-size: 20px;
+}
+.Aboutus {
+    clear: both;
+    padding-top: 75px;
+    padding-right: 60px;
+    padding-bottom: 75px;
+}
+#about {
+    float: right;
+    color: #15485A;
+    font-size: 27px;
+}
+.img {
+    margin-left: 230px;
+    clear: both;
+    float: left;
+    margin-bottom: 75px;
+}
+.img img {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+.descript {
+    width: 700px;
+    float: right;
+    word-wrap: break-word;
+}
+.learn {
+    float: right;
+    width: 147px;
+    height: 64px;
+    font-size: 18px;
+    margin-top: 75px;
+    border-radius: 12px;
+    background-color: #15485A;
+    color: #ffffff;
+}
+a {
+    color: #15485A;
+}
+.TopArtists {
+    margin-top: 50px;
+}
+.TopArtists h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    clear: both;
+}
+.topart {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+}
+.des {
+    clear: both;
+}
+.des img {
+    flex-basis: 100%;
+    width: 200px;
+    height: 200px;
+}
+.de p{
+    margin-top: 26px;
+}
+.prof {
+    width: 60px;
+    height: 60px;
+    background-color: aqua;
+    border-radius: 30px;
+    float: left;
+    margin-top: -20px;
+}
+@media (min-width:600px) {
+    .topart {
+        flex-wrap: nowrap;
+        flex-basis: 25%;
+    }
+    .des img {
+        flex-basis: 25%;
+    }
+}
