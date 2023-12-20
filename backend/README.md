@@ -1,0 +1,1 @@
+ARTSY_MYSQL_USER=artsy_dev ARTSY_MYSQL_PWD=artsy_dev_pwd ARTSY_MYSQL_HOST=localhost ARTSY_MYSQL_DB=artsy_dev_db ARTSY_API_HOST=0.0.0.0 ARTSY_API_PORT=5000 python3 -m api.v1.app
