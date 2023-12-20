@@ -49,7 +49,7 @@ body {
   margin: 50px 0;
 }
 
-.input-box h5 {
+.input-box label {
   font-size: 18px;
   font-weight: 400;
 }
@@ -127,7 +127,7 @@ body {
   font-size: 15px;
 }
 
-.wrapper .continue .cont {
+/* .wrapper .continue .cont {
   width: 225px;
   height: 58px;
   border-radius: 8px;
@@ -139,7 +139,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 15px 10px 16px 10px;
-}
+} */
 
 .error{
     color: crimson;

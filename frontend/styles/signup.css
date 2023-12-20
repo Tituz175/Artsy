@@ -1,6 +1,10 @@
 body {
-    background-image: url(../images/background.jpg);
-    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../img/wallpapersden.com_k-fractal-art_3840x2160.jpg) no-repeat;
+    background-position: center;
 }
 .form {
     width: 477px;
