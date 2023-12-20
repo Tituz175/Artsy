@@ -33,10 +33,10 @@ def signup():
     return jsonify(new_user.to_dict()), 201
 
 
-@app_views.route("/signin", strict_slashes=False, methods=["GET"])
+@app_views.route("/signin", strict_slashes=False, methods=["POST"])
 def signin_view():
     """Returns Successful status"""
-    data = request.args
+    data = request.get_json()
     print(data)
     if data is None:
         return make_response(jsonify({"error": "Not a JSON"}), 400)

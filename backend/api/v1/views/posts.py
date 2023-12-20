@@ -7,9 +7,38 @@ from api.v1.views import app_views
 from flask import jsonify, request, make_response, abort
 
 @app_views.route('/posts', methods=["GET"], strict_slashes=False)
+# def get_posts():
+#     all_posts = [post.to_dict() for post in storage.all(Post).values()]
+#     all_users = [storage.get(User, post.get("user_id")).to_dict() for post in all_posts]
+
+#     combined_list = []
+#     for user in all_users:
+#         for post in all_posts:
+#             if user['id'] == post['user_id']:
+#                 combined_list.append(post)
+#                 print(combined_list[-1])
+#                 for key, val in user.items():
+#                     combined_list[-1][key] = val
+
+    
+#     return jsonify(combined_list)
+
+
 def get_posts():
     all_posts = [post.to_dict() for post in storage.all(Post).values()]
-    return jsonify(all_posts)
+    user_dict = {user['id']: user for user in (storage.get(User, post.get("user_id")).to_dict() for post in all_posts)}
+
+    combined_list = []
+    for post in all_posts:
+        user_id = post['user_id']
+        user_info = user_dict.get(user_id, {})
+        combined_post = post.copy()
+        combined_post.update(user_info)
+        combined_list.append(combined_post)
+        print(combined_list[-1])
+
+    return jsonify(combined_list)
+
 
 @app_views.route('/posts', methods=["POST"], strict_slashes=False)
 def create_post():

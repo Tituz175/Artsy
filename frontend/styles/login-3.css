@@ -141,6 +141,16 @@ body {
   padding: 15px 10px 16px 10px;
 }
 
+.error{
+    color: crimson;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.showerror {
+    display: block;
+}
+
 /* .google {
   width: 26px;
   height: 27px;
