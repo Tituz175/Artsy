@@ -3,7 +3,7 @@
 from models.user import User
 from models.post import Post
 from models import storage
-from api.v1.views import app_views
+from api.views import app_views
 from flask import jsonify
 
 

@@ -35,8 +35,6 @@ class DBStorage:
                                              ARTSY_MYSQL_PWD,
                                              ARTSY_MYSQL_HOST,
                                              ARTSY_MYSQL_DB))
-        if ARTSY_ENV == "test":
-            Base.metadata.drop_all(self.__engine)
 
     def all(self, cls=None):
         """query on the current database session"""

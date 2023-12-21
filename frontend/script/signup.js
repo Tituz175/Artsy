@@ -5,6 +5,7 @@ $(document).ready(function () {
     const name = $('input[type="text"]').val();
     const email = $('input[type="email"]').val();
     const password = $('input[type="password"]:eq(0)').val();
+    const occupation = $('input[name="Occupation"]:checked').val();
 
     if (password == $('input[type="password"]:eq(1)').val()) {
       const data = {
@@ -12,10 +13,13 @@ $(document).ready(function () {
         last_name: name.includes(" ") ? name.split(" ")[1].trim() : "",
         email: email,
         password: password,
+        occupation: occupation,
       };
+      console.log(data)
 
       $.ajax({
-        url: "http://127.0.0.1:5001/api/v1/signup",
+        // url: "https://tituz175.pythonanywhere.com/api/signup",
+        url : "http://127.0.0.1:5000/api/signup",
         method: "POST",
         data: JSON.stringify(data),
         contentType: "application/json",

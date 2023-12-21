@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+	font-family: 'Rubik', sans-serif;
+}
 body {
     margin: 0;
     padding: 0;
@@ -27,7 +32,7 @@ body {
     float: left;
 }
 .nav {
-    width: 458px;
+    width: fit-content;
     margin-top: 28px;
     height: 30px;
     font-size: 20px;
@@ -126,6 +131,7 @@ p {
 }
 a {
     color: #15485A;
+    text-decoration: none;
 }
 .TopArtists {
     margin-top: 50px;
