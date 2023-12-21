@@ -11,7 +11,7 @@ $(document).ready(function () {
     };
 
     $.ajax({
-      url: "http://127.0.0.1:5001/api/v1/signin",
+      url: "http://127.0.0.1:5000/api/signin",
       method: "POST",
       data: JSON.stringify(data),
       contentType: "application/json",
@@ -27,6 +27,7 @@ $(document).ready(function () {
             $(".error").removeClass("showerror");
           }, 3000);
         } else {
+          localStorage.setItem("id", res["id"]);
           window.location.href = "feed.html";
         }
       },

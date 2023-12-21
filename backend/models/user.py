@@ -15,7 +15,7 @@ class User(BaseModel, Base):
     password = Column(String(DEFAULT_LENGTH), nullable=False)
     first_name = Column(String(DEFAULT_LENGTH), nullable=False)
     last_name = Column(String(DEFAULT_LENGTH), nullable=True)
-    bio = Column(String(DEFAULT_LENGTH), nullable=True)
+    occupation = Column(String(DEFAULT_LENGTH), nullable=True)
     posts = relationship("Post", backref="user")
 
     def __init__(self, *args, **kwargs):
